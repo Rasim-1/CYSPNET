@@ -47,20 +47,7 @@ const Cards = () => {
     prevEl: prevRef.current,
     nextEl: nextRef.current,
   }}
-  breakpoints={{
-    0: {
-      slidesPerView: 1.2, 
-    },
-    500: {
-      slidesPerView: 2.2,
-    },
-    800: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 5,
-    }
-  }}
+
   onBeforeInit={(swiper) => {
     swiper.params.navigation.prevEl = prevRef.current;
     swiper.params.navigation.nextEl = nextRef.current;
